@@ -1,11 +1,11 @@
-package main
+package second_task
 
 import (
 	"fmt"
 	"sync"
 )
 
-func main() {
+func Second() {
 	w := sync.WaitGroup{}
 	slice := []int{2, 4, 6, 8, 10}
 	w.Add(len(slice))
