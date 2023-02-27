@@ -1,7 +1,10 @@
 package main
 
-import "solution/second_task"
+import (
+	"fmt"
+	"solution/twentieth_task"
+)
 
 func main() {
-	second_task.Second()
+	fmt.Println(twentieth_task.Twentieth("Hello nigga and world"))
 }
