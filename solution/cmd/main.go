@@ -1,9 +1,11 @@
 package main
 
 import (
-	"solution/write_tasks/eleventh_task"
+	"fmt"
+	"solution/write_tasks/eigth_task"
 )
 
 func main() {
-	eleventh_task.Eleven()
+	fmt.Println(eigth_task.Eigth(133, 3, 0))
+
 }
