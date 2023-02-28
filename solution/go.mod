@@ -3,6 +3,7 @@ module solution
 go 1.19
 
 require (
+	github.com/deckarep/golang-set v1.8.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/nats-io/nats.go v1.22.1 // indirect
 	github.com/nats-io/nkeys v0.3.0 // indirect

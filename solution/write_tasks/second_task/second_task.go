@@ -17,5 +17,4 @@ func Second() {
 		go squre(i)
 	}
 	w.Wait()
-	fmt.Println("Done")
 }
