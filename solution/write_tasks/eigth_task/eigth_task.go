@@ -1,10 +1,10 @@
 package eigth_task
 
-func Eigth(count int, i int, value int) int {
+func Eigth(count int64, i int, value int64) int64 {
 	if value == 1 {
 		return count | (value << i)
 	} else {
-		amount := 1
+		var amount int64 = 1
 		for amount <= count {
 			amount = (amount << 1)
 		}

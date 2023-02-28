@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(eigth_task.Eigth(133, 3, 0))
+	fmt.Println(eigth_task.Eigth(133, 2, 0))
 
 }
