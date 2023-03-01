@@ -1,9 +1,10 @@
 package main
 
 import (
-	"solution/write_tasks/third_task"
+	"fmt"
+	"solution/write_tasks/nineteenth_task"
 )
 
 func main() {
-	third_task.Third()
+	fmt.Println(nineteenth_task.Nineteenth("papa"))
 }
