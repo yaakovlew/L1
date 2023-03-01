@@ -1,0 +1,5 @@
+string.Builder
+var builder strings.Builder
+    builder.Grow(len(x) + len(y))  - выделение памяти
+    builder.WriteString(x)
+    builder.WriteString(y)
