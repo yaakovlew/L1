@@ -15,8 +15,8 @@ func Third() {
 		defer w.Done()
 		sum <- (<-sum + a*a)
 	}
-	for i := range slice {
-		go squre(i)
+	for _, v := range slice {
+		go squre(v)
 	}
 	w.Wait()
 	fmt.Println(<-sum)
