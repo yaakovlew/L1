@@ -2,6 +2,7 @@ package twenty_fifth_task
 
 import "time"
 
-func sleep(t time.Duration) {
-	<-time.After(t)
+func TwentyFifth(t time.Duration) {
+	// остановка на время t
+	<-time.After(t * time.Second)
 }
