@@ -1,0 +1,4 @@
+1) make
+2) new
+3) count := map[T]T
+   slice := []int{}
