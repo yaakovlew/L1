@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// запись в канал
 func writeInChanel(ch chan int) {
 	i := 0
 	for {
@@ -15,6 +16,7 @@ func writeInChanel(ch chan int) {
 	close(ch)
 }
 
+// чтение из канала
 func readFromChanel(ch chan int) {
 	for data := range ch {
 		fmt.Println(data)
