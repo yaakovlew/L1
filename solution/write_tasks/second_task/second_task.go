@@ -16,8 +16,8 @@ func Second() {
 		fmt.Println(a*a, "is square of", a)
 	}
 	//параллельный вызов функций
-	for i := range slice {
-		go squre(i)
+	for _, v := range slice {
+		go squre(v)
 	}
 	//ожидание завершения горутин
 	w.Wait()
