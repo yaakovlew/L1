@@ -1,7 +1,5 @@
 package fifteenth_task
 
-import "sync"
-
 func createHugeString(a int) (s string) {
 	s = ""
 	//....
@@ -9,13 +7,13 @@ func createHugeString(a int) (s string) {
 }
 
 var justString string
-var m sync.Mutex
 
 func someFunc() {
 	v := createHugeString(1 << 10)
-	m.Lock()
-	justString = v[:len(v)]
-	m.Unlock()
+	//копируем даннеы, чтобы не ссылались на одну и ту же строку
+	justString = string(v[:100])
 }
 
-
+func Fifthen() {
+	someFunc()
+}
